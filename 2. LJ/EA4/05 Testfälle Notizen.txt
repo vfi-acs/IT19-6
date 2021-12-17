@@ -1,0 +1,47 @@
+Übungen Testerstellung
+
+	Szenario I
+		
+		
+		Weiterleitungen:
+			- Beschränkung dere insgesamt möglichen Vorgänge durch parallele Weiterleitungen?
+			- Funktion kaskadierende Weiterleitungen gegeben?
+		
+		Anrufbeantworter:
+			- gewünschter Fall Umleiten auf Ursprungs-AB nach x erfolglosen kaskadierten Weiterleitungen möglich?
+			- wie umgesetzt (Neuanwahl / Umleitung auf Ursprung) und ggf. Auswirkung auf max. Anzahl möglicher WTL (parallel / kaskadiert)
+			
+		Besetzt:
+			- Soll wann greifen? Sobald in der Kette der Anwahlen das erste "besetzt" kommt?
+			- vorher Anwahl möglicher WTL oder sofort auf AB?
+			
+		Konferenzen:
+			- max. Anzahl benötigter interner und externer Sprachkanäle ermitteln
+			- externe Sprachkanäle: max. techn. verfügbare Anzahl? Gewünschte Anzahl techn. realisierbar?
+		
+		
+		Aus diesen Überlegungen wären mögliche Tests zum Beispiel:
+			
+			Testfall A1: Anrufe mit Weiterleitungen bis Tiefe 2
+			Testfall A2: Anrufe mit Weiterleitungen über Tiefe 2
+			
+			Testfall B1: Prüfung Verhalten bei eingerichtetem anschlussbezogenen AB
+			Testfall B2: Prüfung Verhalten bei NICHT eingerichtetem anschlussbezogenen AB
+			
+			Testfall C1: Prüfung der Auswirkung von "Besetzt" auf Weiterleitungskette
+			Testfall C2: Prüfung der Auswirkung von "Besetzt" auf anschlussbezogenen AB
+			
+			Testfall D1: Prüfung der Auswirkung ungenügender externer Sprachkanäle auf laufenden (Konferenz-)Betrieb und andere Anforderungsfälle (WTL)
+			Testfall D2: Prüfung der Auswirkung ungenügender interner Sprachkanäle auf laufenden (Konferenz-)Betrieb und andere Anforderungsfälle (WTL)
+		
+		
+		Testfalldefinition sollte mindestens enthalten:
+			- Testfall-Nr. und Name
+			- Anforderungen, die der Testfall prüft
+			- Voraussetzungen zur Testdurchführung
+			- Testschritte inkl. Erwartungshaltung
+			
+			
+			- sollten möglichst umfangreich sein (keine Angriffsfläche bieten)
+			- "exemplarisch habe ich folgenden Auszug zur Durchführung von Testschritten bei ausgewählten Testszenarien angehangen"
+		
