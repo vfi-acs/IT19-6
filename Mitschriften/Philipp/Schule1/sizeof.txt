@@ -1,0 +1,20 @@
+#include <stdio.h>
+void main()
+{
+char *p;
+#if defined (__x86_64__)
+printf ("Laenge von Long = :%ld:\n",sizeof(long));
+printf ("Laenge von Pointer = :%ld\n",sizeof(p));
+printf ("Laenge von Short = :%ld:\n",sizeof(short));
+printf ("Laenge von Int = :%ld:\n",sizeof(int));
+printf ("Laenge von LongLong =:%ld:\n",sizeof(long long));
+printf ("Laenge von Float = =:%ld\n",sizeof(float));
+#else
+printf ("Laenge von Long = :%d:\n",sizeof(long));
+printf ("Laenge von Pointer = :%d:\n",sizeof(p));
+printf ("Laenge von Short = :%d:\n",sizeof(short));
+printf ("Laenge von Int = :%d:\n",sizeof(int));
+printf ("Laenge von LongLong =:%d:\n",sizeof(long long));
+printf ("Laenge von Float = =:%d\n",sizeof(float));
+#endif
+}

@@ -1,0 +1,11 @@
+all:hacker32 hacker32.o hacker64 hacker64.o
+hacker64.o:hacker.c
+        cc -c hacker.c
+        mv hacker.o hacker64.o
+hacker64:hacker64.o
+        cc -o hacker64 hacker64.o
+hacker32.o:hacker.c
+        cc -m32 -c hacker.c
+        mv hacker.o hacker32.o
+hacker32:hacker32.o
+        cc -m32 -o hacker32 hacker32.o
