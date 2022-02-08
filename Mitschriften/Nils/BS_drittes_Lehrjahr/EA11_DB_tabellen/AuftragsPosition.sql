@@ -1,0 +1,74 @@
+-- phpMyAdmin SQL Dump
+-- version 3.5.2.2
+-- http://www.phpmyadmin.net
+--
+-- Host: 127.0.0.1
+-- Erstellungszeit: 24. Aug 2015 um 08:45
+-- Server Version: 5.5.27
+-- PHP-Version: 5.4.7
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES latin1 */;
+
+--
+-- Datenbank: `autowerkstatt`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `auftragsposition`
+--
+
+DROP TABLE IF EXISTS `auftragsposition`;
+CREATE TABLE IF NOT EXISTS `auftragsposition` (
+  `AuftrNr` int(11) NOT NULL DEFAULT '0',
+  `ArtNr` int(11) NOT NULL DEFAULT '0',
+  `Anz` smallint(6) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`AuftrNr`,`ArtNr`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_german2_ci;
+
+--
+-- Daten für Tabelle `auftragsposition`
+--
+
+INSERT INTO `auftragsposition` (`AuftrNr`, `ArtNr`, `Anz`) VALUES
+(1999001, 100031, 7),
+(1999001, 100065, 4),
+(1999001, 100106, 6),
+(1999002, 100031, 2),
+(1999003, 100106, 25),
+(1999004, 100108, 2),
+(1999004, 200001, 1),
+(1999005, 999800, 1),
+(1999005, 999888, 1),
+(1999005, 999889, 1),
+(1999005, 999999, 2),
+(1999006, 999996, 4),
+(1999006, 999998, 1),
+(1999007, 450003, 4),
+(1999007, 999996, 4),
+(1999007, 999997, 4),
+(1999007, 999999, 2),
+(2000001, 999998, 1),
+(2000001, 999999, 4),
+(2000002, 999996, 4),
+(2000003, 999801, 1),
+(2000003, 999888, 1),
+(2000003, 999889, 1),
+(2000004, 999999, 1),
+(2000005, 450003, 1),
+(2000005, 999997, 5),
+(2000005, 999999, 1),
+(2000006, 600100, 1),
+(2000006, 999999, 5);
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
